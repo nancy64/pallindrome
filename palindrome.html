@@ -1,0 +1,29 @@
+<!DOCType HTML>
+<html>
+<head>
+<title>palimdrome</title>
+</head>
+<body>
+<script>
+function palimdrome()
+{
+    var num=Number(document.getElementById('num').value);
+    var result;
+    var temp;
+    temp=num;
+    while(num!=0)
+    {
+        result=result*10;
+        result=temp%10;
+        temp=temp/10;
+    }
+    
+if (result==num)
+{
+    The Number Is Palindrome
+}
+else
+{
+    The Number Is Not Palindrome
+}
+}
